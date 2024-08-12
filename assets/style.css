@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #1a1a1a;
+    font-family: "Raleway", sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+nav{
+    display: flex;
+    align-self: center;
+}
+li{
+    display: inline-block;
+    padding: 20px;
+}
+a{
+    color: white;
+}
+.logo{
+    width: 200px;
+    padding: 20px;
+}
+h1{
+    color: white;
+}
+h2{
+    color: deeppink;
+}
+h3{
+    color: white;
+    font-weight: 200;
+}
+.hero{
+    display:flex;
+    margin: 5rem;
+    align-items: center;
+}
+.foto-hero{
+    width: 20rem;
+    border: dashed 10px;
+    border-color: deeppink;
+    border-radius: 100%;
+    display: flex;
+    align-self: flex-end;
+}
+.foto-presentacion{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    padding-left: 10rem;
+}
+.presentacion{
+    display: flex;
+    align-items: baseline;
+    gap: 7px;
+
+}
