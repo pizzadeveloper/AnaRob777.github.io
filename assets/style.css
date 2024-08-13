@@ -5,6 +5,28 @@
 body{
     background-color: #1a1a1a;
     font-family: "Raleway", sans-serif;
+    background: linear-gradient(315deg, #00ffbd, #ff9400, #e700ff, #2751b9, #8d00ff);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 header{
     display: flex;
@@ -15,6 +37,9 @@ nav{
     align-self: center;
 }
 li{
+    color:white
+}
+.navegador{
     display: inline-block;
     padding: 20px;
 }
@@ -29,11 +54,30 @@ h1{
     color: white;
 }
 h2{
-    color: deeppink;
+    color: white;
+    padding-bottom: 1rem;
 }
 h3{
     color: white;
-    font-weight: 200;
+    font-weight: 600;
+}
+h4{
+    color: white;
+}
+h6{
+    color: white;
+}
+p{
+    color: white;
+    text-decoration: dotted;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+}
+section{
+    padding: 3rem;
 }
 .hero{
     display:flex;
@@ -42,8 +86,8 @@ h3{
 }
 .foto-hero{
     width: 20rem;
-    border: dashed 10px;
-    border-color: deeppink;
+    border: solid 5px;
+    border-color: white;
     border-radius: 100%;
     display: flex;
     align-self: flex-end;
@@ -58,5 +102,141 @@ h3{
     display: flex;
     align-items: baseline;
     gap: 7px;
+
+}
+.minisec{
+    padding: 2rem;
+    border: solid 1px #fff;
+    border-radius: 20px;
+
+    
+
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #686FFD;
+    animation: wave 0.8s forwards;
+    opacity: 1;
+    box-shadow: 0 4px 8px rgb(0, 0, 0), 0 6px 20px 0 #686FFD;
+    z-index: 5;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
 
 }
