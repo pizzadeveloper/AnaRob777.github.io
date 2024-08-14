@@ -79,6 +79,10 @@ footer{
 section{
     padding: 3rem;
 }
+.link:hover{
+    font-size: 600;
+
+}
 .hero{
     display:flex;
     margin: 5rem;
@@ -86,11 +90,10 @@ section{
 }
 .foto-hero{
     width: 20rem;
-    border: solid 5px;
-    border-color: white;
     border-radius: 100%;
     display: flex;
     align-self: flex-end;
+    filter: grayscale(20);
 }
 .foto-presentacion{
     display: flex;
@@ -108,8 +111,7 @@ section{
     padding: 2rem;
     border: solid 1px #fff;
     border-radius: 20px;
-
-    
+    background-color:rgba(0, 0, 0, 0.307);
 
 }
 .circle{
