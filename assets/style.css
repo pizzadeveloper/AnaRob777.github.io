@@ -41,6 +41,9 @@ nav{
     align-self: center;
     padding-right: 3rem;
 }
+ul{
+    list-style: none;
+}
 li{
     color:white
 }
@@ -89,6 +92,21 @@ footer{
 }
 section{
     padding: 3rem;
+}
+.redes{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 95vw;
+    padding-top: 35vh;
+    z-index: 2;
+}
+
+.fa-brands{
+    font-size: 40px;
+}
+.fa-brands:hover{
+   color: #1a1a1a;
 }
 .port{
     display: flex;
