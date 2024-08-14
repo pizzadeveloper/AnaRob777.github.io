@@ -31,10 +31,15 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    position: fixed ;
+    z-index: 3;
+    width: 100vw;
+
 }
 nav{
     display: flex;
     align-self: center;
+    padding-right: 3rem;
 }
 li{
     color:white
@@ -45,6 +50,11 @@ li{
 }
 a{
     color: white;
+    text-decoration: none;
+}
+a:hover{
+    font-size: 25px;
+    text-decoration: underline dotted;
 }
 .logo{
     width: 200px;
@@ -52,6 +62,7 @@ a{
 }
 h1{
     color: white;
+    font-size: 50px;
 }
 h2{
     color: white;
@@ -79,14 +90,29 @@ footer{
 section{
     padding: 3rem;
 }
+.port{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 11rem;
+}
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.imagenes{
+    width: 30rem;
+}
 .link:hover{
     font-size: 600;
 
 }
 .hero{
     display:flex;
-    margin: 5rem;
+    justify-content: space-between;
+    margin: 2rem;
     align-items: center;
+    padding-top: 15rem;
 }
 .foto-hero{
     width: 20rem;
