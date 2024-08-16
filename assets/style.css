@@ -36,8 +36,9 @@ header{
     width: 100vw;
 
 }
-nav{
+.nav{
     display: flex;
+    align-content: center;
     align-self: center;
     padding-right: 3rem;
 }
@@ -107,6 +108,10 @@ section{
 }
 .fa-brands:hover{
    color: #1a1a1a;
+   font-size: 60px;
+}
+.abrir-menu, .cerrar-menu{
+    display: none;
 }
 .port{
     display: flex;
@@ -284,5 +289,73 @@ section{
         opacity: 0;
         border-radius: 50%;
     }
-
 }
+@media screen and (max-width: 425px){
+
+    .abrir-menu,.cerrar-menu{
+        display:block;
+        background-color: transparent;
+        border: 0;
+        font-size: 2rem;
+    }
+    .abrir-menu{
+        color:#fff;
+        padding-right: 1rem;
+    }
+
+    .cerrar-menu{
+        color: #fff;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right:0;
+        bottom:0;
+        background-color: #1a1a1a;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vh rgba(0, 0, 0, 0.5);
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    #curriculum{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-self: center;
+        gap:60px;
+    }
+    #portafolio{
+        display: flex;
+        flex-direction: column;
+    }
+    .port{
+        display: flex;
+        flex-direction: column;
+    }
+    .imagenes{
+        max-width: 80vw;
+    }
+    .nav-list{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .navegador{
+        display: flex;
+        flex-direction: column;
+    }
+    .redes{
+        display: none;
+    }
+    }
+
